@@ -1,0 +1,235 @@
+{
+
+    // 一定要使用 文件 -> 首选项 -> 设置 -> 打开用户设置(在莫个设置项下点击  在 settings.json 中编辑)
+    // location : ~/.config/Code/User/settings.json
+
+
+
+    // 工作区配置
+    //"workbench.colorTheme": "Atom One Light",
+    "editor.fontSize": 16 ,
+
+
+    // 调整窗口的缩放级别。原始大小是 0，
+    // 每次递增(例如 1)或递减(例如 -1)表示放大或缩小 20%。
+    // 也可以输入小数以便以更精细的粒度调整缩放级别。
+    "window.zoomLevel": 0.2,
+
+
+    // 一个制表符 tab 等于的空格数
+    "editor.tabSize": 4,
+
+
+    // 在一定数量的等宽字符后显示垂直标尺。
+    // 输入多个值，显示多个标尺。若数组为空，则不绘制标尺
+    "editor.rulers": [ 
+    ],
+
+
+    
+
+    // 控制资源管理器是否在把文件删除到废纸篓时进行确认
+    "explorer.confirmDelete": true,
+
+
+    // 启用 Tab 补全。
+    // on: 在按下 Tab 键时进行 Tab 补全，将插入最佳匹配建议
+    "editor.tabCompletion": "on",
+
+    // 控制行号的显示。
+    // on: 将行号显示为绝对行数
+    "editor.lineNumbers": "on",
+
+
+    "editor.codeActionsOnSave": {
+        // 这个属性能够在保存时，自动调整 import 语句相关顺序，
+        // 能够让你的 import 语句按照字母顺序进行排列
+        "source.organizeImports": true, 
+        "source.fixAll": true,  // 控制是否应在文件保存时运行自动修复操作
+    },
+
+
+    // 设置文件自动保存
+    // onFocusChange : 文件焦点变化时自动保存
+    "files.autoSave": "onFocusChange",
+
+
+    // 控制行高
+    // 使用 0 根据字号自动计算行高。
+    // 介于 0 和 8 之间的值将用作 字号的乘数。
+    // 大于或等于 8 的值将用作有效值。
+    "editor.lineHeight": 0,
+
+
+
+    "files.associations": {
+
+    },
+
+
+
+
+    // ctrl + shift + p 输入 setting.json 打开
+    // location : .vscode/setting.json
+
+
+    // ---------------------------- PowerMode 特效插件相关 -----------------------------//
+    // 需要现在插件商店中搜索 PowerMode 并下载安装
+    "powermode.enabled": true ,  // 启用插件
+    "powermode.enableShake":true , // 桌面是否抖动
+
+    "powermode.shakeIntensity": 2,  //屏幕抖动的强度
+
+
+
+
+    // 特效样式
+    //"powermode.presets": "flames" ,          // 火焰
+    //"powermode.presets":"fireworks" ,      // 烟花
+    //"powermode.presets":"exploding-rift" , // 炸裂
+    //"powermode.presets":"simple-rift" ,    // 爆炸
+    "powermode.presets":"particles" ,      // 粒子
+    //"powermode.presets":"magic" ,          // 魔术
+    //"powermode.presets":"clippy" ,         // 回形针
+
+
+
+    // 组合重置前的秒数
+    "powermode.comboTimeout": 10 , 
+    
+    // 特效随字体颜色改变
+    "powermode.backgroundMode": "mask",
+
+    // 适用于爆炸元素的自定义 CSS
+    "powermode.customCss": {
+
+
+    },
+
+    // 设置为false以在键入时禁用爆炸             
+    //"powermode.enableExplosions": true,
+
+
+    // 使用背景图像的 url() 部分可以放入的任何内容
+    // 例如base64编码的gif或绝对文件路径WITHOUT引号。URL必须是HTTPS。
+    //"powermode.customExplosions": []
+
+
+
+
+
+
+    // 爆炸的大小。对于值x，高度设置为x REM，宽度设置为 xCH。 
+    //"powermode.explosionSize": 6 ,
+
+    // 爆炸的垂直偏移。增加它将推动爆炸，减少它将使它们下降。              
+    //"powermode.explosionOffset": 0.35,
+
+    // 触发爆炸所需的击键次数。2意味着每一秒击键都会爆炸，1意味着每次击键。              
+    //"powermode.explosionFrequency": 2,
+
+
+    // 确定爆炸持续多长时间（毫秒）。设置为0，它将永远持续下去。              
+    // "powermode.explosionDuration": 1000,
+
+
+
+    // ---------------------------------------------------------------------------------//
+    
+
+
+    // background 插件
+
+    "background.enabled": true ,
+    "background.useDefault": false ,
+    "background.customImages": ["file:////home/zhanghao/land.jpg"],
+    "background.style": {
+        "content": "''",
+        "pointer-events": "none",
+        "position": "absolute",
+        "z-index": "99999",
+        "width": "100%",
+        "height": "100%",
+        "background-position": "100% 100%",
+        "background-repeat": "no-repeat",
+        "opacity": 1
+    },
+    "backgroundCover.imagePath": "/home/zhanghao/下载/fabrice-villard-m80vgB3Ipt8-unsplash.jpg",
+    
+
+
+    // VScode 背景配置为 豆沙绿
+    // "workbench.colorTheme":"Atom One Light", 
+    // "workbench.colorCustomizations": {
+    //     "[Atom One Light]": {
+    //         "editor.background": "#C7EDCC",
+    //         "sideBar.background": "#e7f0e7",
+    //         "activityBar.background": "#C7EDCC",
+    //     },
+    // },
+     
+
+
+
+    // Rainbow Fart 真人语音播报插件
+    // ctrl + shift + p 输入 Enable Rainbow Fart 
+    // 点击之后右下角点击  Open , 会自定打开浏览器
+    // 点击授权, 并保持页面打开
+    // 目前支持的关键字
+    // function
+    // arrow function
+    // extends
+    // if
+    // for
+    // await
+    // catch
+    // import
+    // 
+    // 也可以定制语音
+    // github项目地址：https://github.com/topics/rainbow-fart 有各种语音包
+
+
+
+
+
+
+    // TODO
+    // VScode 快捷键
+
+    // 行操作
+    // 重开一行 : 光标在行尾的话，回车即可；不在行尾，ctrl + enter 向下重开一行
+    // ctrl + shift + enter 在该行的上一行插入一行
+
+    // ctrl +x : 光标没有选择内容时,  删除一行
+    // ctrl + shift +k : 直接删除一行
+    
+    // 向下复制一行 : shift + alt + 方向键下
+    // 向上复制一行 : shift + alt + 方向键上
+
+    // ctrl + z : 回退
+
+    // 打开终端 ctrl + `
+    // 打开新的编辑器窗口 : ctrl + shift + n
+    // 关闭编辑器 : ctrl + shift + w
+
+    // Home 键 : 光标跳到 行头    在 insert 键后
+    // End 光标跳到行尾   在 delete 键后
+    
+    // ctrl + Home : 跳转到页头
+    // ctrl + End  : 跳转到页尾
+
+    // Ctrl + Shift + [ 折叠区域代码
+
+    // Ctrl + Shift + ] 展开区域代码
+
+    // Ctrl + / 添加关闭行注释
+    // Shift + Alt +A 块区域注释   , 即  /*   */
+    // ctrl + shift + w : 关闭窗口
+
+
+
+
+
+
+
+}
